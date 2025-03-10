@@ -34,6 +34,8 @@ body::before {
     z-index: -1;
 }
 
+/* navbar */
+
 .navbar {
     padding: 1.5rem 5%;
     backdrop-filter: blur(10px);
@@ -111,6 +113,8 @@ body::before {
     width: 100%;
 }
 
+/* Projeto integrador */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -159,6 +163,8 @@ body::before {
     height: 2px;
     background: var(--purple-4);
 }
+
+/* sobre o projeto */
 
 .about-project-section {
     padding: 7rem 0 4rem;
@@ -231,6 +237,56 @@ body::before {
         order: -1;
     }
 }
+
+.button-container {
+    margin-top: 2rem;
+}
+
+.animated-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--purple-3);
+    border: 2px solid var(--purple-3);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2));
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5 ease;
+    border-radius: 50%;
+}
+
+.animated-button:hover {
+    background-color: var(--purple-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.animated-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.animated-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Como foi feito */
 
 .carousel-section {
     padding: 4rem 0 8rem;
@@ -315,9 +371,10 @@ body::before {
     opacity: 1;
 }
 
+/* rodapé */
+
 .footer {
     padding: 40px 0;
-    background-color: var(--purple-2);
 }
 
 .footer .social {
