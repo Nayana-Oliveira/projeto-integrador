@@ -373,20 +373,52 @@ body::before {
 
 .hover-text {
     position: absolute;
-    bottom: -50px;
+    bottom: -50px; 
     left: 0;
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
     color: var(--text);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--purple-dark);
     padding: 0.5rem 1rem;
-    transition: bottom 0.3 ease;
-    pointer-events: none;
+    transition: bottom 0.3s ease;
+    pointer-events: none; 
 }
 
 .carousel-item:hover .hover-text {
     bottom: 0;
+}
+
+.carousel-container:hover .carousel-nav .carousel-dot {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-container .carousel-nav .carousel-dot {
+    opacity: 1;
+    transition: opacity 0.7s ease;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: var(--text);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
 }
 
 /* rodapé */

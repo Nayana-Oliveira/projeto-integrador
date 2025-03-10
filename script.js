@@ -68,3 +68,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+function moveCarousel(carouselId, direction) {
+    const carousel = document.getElementById(carouselId);
+    const items = carousel.children;
+    const totalItems = items.length;
+
+    let currentIndex = Array.from(items).findIndex(item => item.style.transform === 'translateX(0%)');
+    if (currentIndex === -1) currentIndex = 0;
+
+    let newIndex = currentIndex + direction;
+
+    if (newIndex < 0) newIndex = totalItems - 1;
+    if (newIndex >= totalItems) newIndex = 0;
+
+    carousel.style.transform = `translateX(-${newIndex * 100}%)`;
+}

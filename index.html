@@ -12,6 +12,7 @@
     <nav class="navbar">
         <div class="logo">PROJETO INTEGRADOR</div>
         <div class="nav-links">
+            <a href="#" class="nav-link">Projeto Integrador</a>
            <a href="#sobre-o-projeto" class="nav-link">Sobre o Projeto</a>
            <a href="#como-foi-feito" class="nav-link">Como foi feito</a>
            <a href="#desenvolvedores" class="nav-link">Desenvolvedores</a>
@@ -45,58 +46,75 @@
     </div>
 </section>
 
-    <!-- Como foi feito -->
-    <section class="carousel-section" id="como-foi-feito">
-        <div class="section-title-container">
-            <h2 class="section-title">Como foi feito</h2>
+<!-- Como foi feito -->
+<section class="carousel-section" id="como-foi-feito">
+    <div class="section-title-container">
+        <h2 class="section-title">Como foi feito</h2>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-arrow left-arrow" onclick="moveCarousel('carousel1', -1)">
+            &#10094;
         </div>
-        <div class="carousel-container">
-            <div class="carousel" id="carousel1">
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
-                    <span class="carousel-text">Lorem ipsum</span>
-                </div>
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-3), var(--purple-4))">
-                    <span class="carousel-text">lorem ipsum ipsum</span>
-                </div>
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-4), var(--purple-1))">
-                    <span class="carousel-text">lorem ipsum</span>
-                </div>
+        <div class="carousel-arrow right-arrow" onclick="moveCarousel('carousel1', 1)">
+            &#10095; 
+        </div>
+        <div class="carousel" id="carousel1">
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
+                <span class="carousel-text">Lorem ipsum</span>
             </div>
-            <div class="carousel-nav" id="nav1"></div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-3), var(--purple-4))">
+                <span class="carousel-text">lorem ipsum ipsum</span>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-4), var(--purple-1))">
+                <span class="carousel-text">lorem ipsum</span>
+            </div>
         </div>
-    </section>
+        <div class="carousel-nav" id="nav1" style="display: none;"></div>
+    </div>
+</section>
 
     <!-- Desenvolvedores -->
-  <section class="carousel-section dev-section" id="desenvolvedores">
+    <section class="carousel-section dev-section" id="desenvolvedores">
         <div class="section-title-container">
-            <h2 class="section-title">Desenvolvedores</h2>
+           <h2 class="section-title">Desenvolvedores</h2>
         </div>
         <div class="carousel-container">
-            <div class="carousel" id="carousel2">
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
-                    <span class="carousel-text">Desenvolvedor 1</span>
-                    <div class="hover-text">Gabriela Rodrigues</div>
-                </div>
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-3), var(--purple-4))">
-                    <span class="carousel-text">Desenvolvedor 2</span>
-                    <div class="hover-text">Nayana Oliveira</div>
-                </div>
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-4), var(--purple-1))">
-                    <span class="carousel-text">Desenvolvedor 3</span>
-                    <div class="hover-text">Lucas Andrade</div>
-                </div>
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
-                    <span class="carousel-text">Desenvolvedor 4</span>
-                    <div class="hover-text">Desenvolvedor 4</div>
-                </div>
-                <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
-                    <span class="carousel-text">Desenvolvedor 5</span>
-                    <div class="hover-text">Desenvolvedor 5</div>
-                </div>
-            </div>
-            <div class="carousel-nav" id="nav2"></div>
+        <div class="carousel-arrow left-arrow" onclick="moveCarousel('carousel2', -1)">
+            &#10094;
         </div>
-    </section>
+        <div class="carousel-arrow right-arrow" onclick="moveCarousel('carousel2', 1)">
+            &#10095; 
+        </div>
+        <div class="carousel" id="carousel2">
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
+                <span class="carousel-text">Desenvolvedor 1</span>
+                <div class="hover-text">Gabriela Rodrigues</div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-3), var(--purple-4))">
+                <span class="carousel-text">Desenvolvedor 2</span>
+                <div class="hover-text">Nayana Oliveira</div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-4), var(--purple-1))">
+                <span class="carousel-text">Desenvolvedor 3</span>
+                <div class="hover-text">Lucas Andrade</div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
+                <span class="carousel-text">Desenvolvedor 4</span>
+                <div class="hover-text">Desenvolvedor 4</div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
+                <span class="carousel-text">Desenvolvedor 5</span>
+                <div class="hover-text">Desenvolvedor 5</div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(45deg, var(--purple-2), var(--purple-3))">
+                <span class="carousel-text">Todos os desenvolvedores</span>
+                <div class="hover-text">Todos os desenvolvedores</div>
+            </div>
+        </div>
+        <div class="carousel-nav" id="nav2" style="display: none;"></div>
+    </div>
+</section>
+
 
     <section class="footer">
         <div class="social">
